@@ -1,0 +1,25 @@
+input[type]
+ {
+    border: 5px solid red;
+} 
+/*o konkretnym atrybucie z konkretną wartością*/
+input[type="tel"] {
+    border: 5px solid yellow;
+} 
+
+/*o konkretnym ciągu znaków*/
+input[title~="pole"] {
+    border: 5px solid blue;
+}
+/*o fragmentu z ciągu znaków*/
+input[title*="form"] {
+    border: 5px solid grey;
+}
+/*zaczyna sie na*/
+input[title^="zac"] {
+    border: 5px solid orange;
+}
+/*konczy sie na*/
+input[title$="ie"] {
+    border: 5px solid violet;
+}
