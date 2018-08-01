@@ -1,20 +1,40 @@
-@media (min-width: 993px) and (max-width:1170px) {
+@media (min-width: 992px) and (max-width:1170px) {
     header {
         background-image: url(../img/man-2.jpg);
         height: 70vh;
         justify-content: flex-end;
         align-items: baseline;
-        background-position: center;
-        background-position: 100% 70%;
+        background-position: top;
+
+    }
+
+    h1 {
+        align-self: center;
+        margin-right: 3%;
     }
 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+    /*
+    .container{
+        height: 100vh;
+    }
+*/
     header {
         height: 100vh;
-        background-size: cover;
+        background-size: 100% 50vh;
         background-position: top;
+        justify-content: center;
 
     }
+
+    h1 {
+        color: black;
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 25vh;
+
+    }
+
 }
