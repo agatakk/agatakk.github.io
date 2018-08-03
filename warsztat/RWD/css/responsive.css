@@ -15,26 +15,20 @@
 
 }
 
-@media (max-width: 991px) {
-    /*
-    .container{
-        height: 100vh;
-    }
-*/
-    header {
-        height: 100vh;
-        background-size: 100% 50vh;
-        background-position: top;
-        justify-content: center;
+@media (max-width: 992px) {
 
+    header {
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
     }
 
     h1 {
         color: black;
         text-align: center;
         font-size: 1.5em;
-        margin-top: 25vh;
-
+        margin-top: 80vh;
     }
 
 }
