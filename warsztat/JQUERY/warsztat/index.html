@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+</head>
+
+<body>
+    <form action="" id="formularz">
+    <label for="imie">Imię</label><input id="imie" type="text"><br>
+    <label for="nazwisko">Nazwisko</label><input id="nazwisko" type="text"><br>
+    <label for="ulica">Ulica</label><input id="ulica" type="text"><br>
+    <label for="nrdomu">Nr domu/mieszkania</label><input id="nrdomu" type="text"><br>
+    <label for="kod">Kod pocztowy</label><input id="kod" type="text"><br>
+    <label for="miasto">Miasto<input id="miasto" type="text"></label><br>
+    <select name="pizza" id="pizza">
+        <option value="0">--Wybierz pizze--</option>
+        <option value="1" class="choosePizza">Hawajska</option>
+        <option value="2" class="choosePizza">Pepperoni</option>
+        <option value="3" class="choosePizza">Capriciosa</option>
+        <option value="4" class="choosePizza">Sycylijska</option>
+        <option value="5" class="choosePizza">Jalapenos</option>
+          
+    </select><span id="pricing"> 0 PLN</span>
+    <p>Wybierz sos:</p>
+    <label>
+    <input type="checkbox" id="pomidorowy" class="sosy">Pomidorowy</label>
+      <label> <br>
+    <input type="checkbox" id = "czosnkowy" class="sosy">Czosnkowy</label><br>
+    <label><input type="checkbox" id="agreement" name="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label><br>
+    <input type="submit">
+    
+    </form>
+    
+    <ul id="bledy"></ul>
+   
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
