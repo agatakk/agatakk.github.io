@@ -40,11 +40,10 @@ section {
 .main-menu{
     background-color: white;
     position: fixed;
-    display: flex;
-    justify-content: flex-end;
     top:0;
     left:0;
     width: 100%;
+    z-index: 1;
   
 }
 
@@ -98,9 +97,6 @@ section {
 #skills {
     text-align: center;
 }
-/* #skills-h2 {
-    margin-bottom: 3vh;
-} */
 
 #skills figure {
 
@@ -125,18 +121,7 @@ section {
 #portfolio-item-3 {
     background-image: url("../img/portfolio3.jpg");
 }
-/* 
-#portfolio {
-    /* overflow: auto;
-} */
 
-.portfolio-item{
-    height: 50vh;
-    background-position: center;
-    background-size: cover;
-    padding: 0px;
-    /* position: relative; */
-}
 
 .item-mask {
     /* position: absolute; */
@@ -175,12 +160,14 @@ section {
     padding: 30px;
 }
 
-#contact h3 {
+#contact h2 {
+    margin-top: 40px;
     font-size: 2em;
-    text-align: inherit;
+    text-align: left;
 }
 
 #contact address {
+    display: block;
     font-style: normal;
     margin-top: 30px;
     line-height: 1.5;
@@ -211,11 +198,11 @@ section {
     background-color: #fff;
 }
 
-/* #contact form {
+#contact form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-} */
+}
 
 #contact form input:not([type='submit']),
 #contact form textarea {
