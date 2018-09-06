@@ -56,7 +56,20 @@ section {
     font-weight: 400;
   
 }
+.nav-btn{
+   
+    border:0.5px solid #1ac056;
+}
 
+.nav-btn:focus{
+    border: none;
+}
+.icon-stripe {
+    color:#1ac056;
+    border-color: #1ac056;
+    background-color: #1ac056;
+    height: 1px;
+  }
 /* header */
 
 #main-header {
@@ -198,12 +211,13 @@ section {
     color: #fff;
     font-size: 2em;
     margin-right: 20px;
+    margin-bottom: 35px;
 }
 
 #contact .social-icons a:hover {
     color: #213b50;
     background-color: #fff;
-}
+    }
 
 #contact form {
     display: flex;
