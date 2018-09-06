@@ -1,0 +1,244 @@
+/* general */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #291f1a
+}
+
+article {
+    line-height: 26px;
+   
+}
+
+span {
+    color: #1ac056;
+}
+
+.title{
+    margin: 2vh auto;
+    padding: 3vh;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    font-weight: 300;
+}
+
+
+section {
+    padding: 30px 60px 100px;
+    background-color: #f9fcfe;
+}
+
+/* navigation */
+
+.main-menu{
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top:0;
+    left:0;
+    width: 100%;
+  
+}
+
+
+.main-menu .list ul .menu-i a{
+
+    color:#1ac056;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 400;
+  
+}
+
+/* header */
+
+#main-header {
+    background-image: url("../img/header-background.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-header .main-header-content {
+    color: #fff;
+}
+
+#main-header .main-header-content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+}
+
+#main-header .main-header-content h2 {
+    font-size: 2em;
+}
+
+/* about */
+.main-about #my-image{
+    text-align:center;
+}
+.main-about #my-image img{
+    height: 50vh;
+  
+}
+
+/* skills */
+
+
+#skills {
+    text-align: center;
+}
+/* #skills-h2 {
+    margin-bottom: 3vh;
+} */
+
+#skills figure {
+
+    flex-basis: 20%;
+    margin-top: 5vh;
+}
+
+#skills figure i {
+    font-size: 4em;
+}
+
+/* portfolio */
+
+#portfolio-item-1 {
+    background-image: url("../img/portfolio1.jpg")
+}
+
+#portfolio-item-2 {
+    background-image: url("../img/portfolio2.jpg");
+}
+
+#portfolio-item-3 {
+    background-image: url("../img/portfolio3.jpg");
+}
+/* 
+#portfolio {
+    /* overflow: auto;
+} */
+
+.portfolio-item{
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+    /* position: relative; */
+}
+
+.item-mask {
+    /* position: absolute; */
+    background-color: rgba(42, 61, 79, 0.8);
+    transition: all .3s linear;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0;
+}
+
+.item-mask:hover {
+    opacity: 1;
+}
+
+.item-mask .item-mask-content {
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.item-mask .item-mask-content a {
+    color: #1ac056;
+    font-size: 2em;
+}
+
+.item-mask .item-mask-content a:hover {
+    color: #fff;
+
+}
+/* contact */
+
+#contact {
+    background-color: #213b50;
+    color: #fff;
+    padding: 30px;
+}
+
+#contact h3 {
+    font-size: 2em;
+    text-align: inherit;
+}
+
+#contact address {
+    font-style: normal;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+#contact address a {
+    color: #1ac056;
+}
+
+#contact .social-icons {
+    margin-top: 40px;
+}
+
+#contact .social-icons a {
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+#contact .social-icons a:hover {
+    color: #213b50;
+    background-color: #fff;
+}
+
+/* #contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+#contact form input:not([type='submit']),
+#contact form textarea {
+    background-color: #425869;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+#contact form input[type="submit"] {
+    width: 25%;
+    align-self: flex-end;
+    background-color: #1ac056;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+#contact form input[type="submit"]:hover {
+    color: #1ac056;
+    background-color: #fff;
+}
