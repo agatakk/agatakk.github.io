@@ -122,6 +122,13 @@ section {
     background-image: url("../img/portfolio3.jpg");
 }
 
+.portfolio-item{	
+    height: 50vh;	
+    background-position: center;	
+    background-size: cover;	
+    padding: 0px;	
+    /* position: relative; */	
+} 
 
 .item-mask {
     /* position: absolute; */
