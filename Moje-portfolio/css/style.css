@@ -131,20 +131,20 @@ h3{
 }
 
 #main-info #main-info-skills #main-info-skills-icons figure{
-    /* flex-basis:30%; */
+   
     margin: 0 1.5rem;
     padding:0.3rem;
+    color: rgb(0, 75, 78);
 }
 
 #main-info #main-info-skills #main-info-skills-icons figure i{
     font-size: 4vw;
     margin: 0.2em 0;   
     text-align: center;
-    /* color: rgb(49, 49, 71); */
 }
 #main-info #main-info-skills #main-info-skills-icons figure figcaption {
     text-align: center;
-    color: rgb(49, 49, 71);
+    font-weight: 500;
     
 }
 
@@ -219,8 +219,6 @@ h3{
     background-image: url("../img/WINGSINt.jpg");
 }
 
-
-
 #portfolio figure .portfolio-item{
    width: 100%;
    height:60vh;
@@ -239,7 +237,7 @@ h3{
     width: 100%;
     height: 100%;
     border-radius: .5rem;
-    background-color: rgb(189, 27, 54, .8);
+    background-color: rgb(0, 75, 78, .8);
     color: #fff;
     opacity: 0;
     transition: all .3s linear;
@@ -270,7 +268,9 @@ h3{
 
 #portfolio figure .item-mask .item-mask-content h3:hover{
 
-    transform: scale(1.2);
+    transform: scale(1.1);
+    color: rgb(189, 27, 54);
+    background-color: rgba(255, 255, 255, 0.7);
    
     
     }
@@ -284,12 +284,121 @@ h3{
 }
 
 #contact{
-    background-color: rgb(189, 27, 54);
-    color: #fff;
+    background-color: rgb(0, 75, 78);
     height:100vh;
+    padding: 0;
+}
+#contact .background-white{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
     padding: 2rem;
+}
+#contact .contact-more-info{
+    color: rgb(0, 75, 78);
+    padding: 0 1rem;
 }
 
 #contact .contact-more-info h3 {
-    color: white;
+    color:#fff;
+    padding: 1rem;
+}
+
+#contact .contact-more-info h2{
+
+   padding: 0;
+   margin-bottom: 1rem;
+}
+
+#contact .contact-more-info .social-icons{
+
+    margin: 3rem 0;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+#contact .contact-more-info .social-icons figure i{
+
+    font-size: 3rem;
+    color: rgb(0, 75, 78);
+    padding:.5rem;
+    transition: all 1s;
+ 
+    border-radius: 0.5rem;
+}
+
+#contact .contact-more-info .social-icons figure i:hover{
+
+    color: rgb(189, 27, 54);
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: rotate(360deg);
+   
+}
+
+#contact .contact-more-info .tel-email{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.1rem;
+    /* line-height: 1rem; */
+}
+
+#contact .contact-more-info .tel-email figure{
+    font-size: 2rem;
+    padding: 0.5rem;
+   
+  }
+
+#contact .contact-more-info .tel-email p, #contact .contact-more-info .tel-email a{
+    
+   margin: 1rem;
+   padding: .5rem .5rem 0 .5rem;
+   line-height: 1rem;
+   
+    
+}
+
+#contact .contact-more-info .tel-email a{
+    text-decoration: none;
+    color: rgb(0, 75, 78);
+    transition: all .6s;
+    
+    border-radius: .5rem;
+}
+#contact .contact-more-info .tel-email a:hover{
+    color: rgb(189, 27, 54);
+    background-color:rgba(255, 255, 255, 0.7)
+    
+}
+#contact .contact-form{
+    padding: 1rem;
+}
+
+#contact .contact-form input, #contact .contact-form textarea{
+    width: 80%;
+    margin: 0.5rem;
+    padding: .8rem;
+    box-shadow:0;
+}
+
+#contact .contact-form input[type="submit"]{
+    background-color:rgb(189, 27, 54);
+    width: 20%;
+    padding: .5rem;
+    margin: 0;
+    margin-left: .55rem;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+#contact .contact-form input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+#contact .contact-form input:focus, #contact .contact-form textarea:focus{
+
+    border: 2px solid rgb(189, 27, 54);
+    outline: none;
 }
