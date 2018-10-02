@@ -1,0 +1,93 @@
+@media (min-width: 992px) and (max-width: 1064px){
+    #main #main-info #main-info-links{
+        margin-top: -3.2rem;
+    }
+}
+@media (max-width: 991px){
+    h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1.2em;
+    }
+    #main #main-intro #my-name h1{
+        font-size: 2em;
+    }
+    #main #main-info #main-info-about{
+        padding: 0;
+        
+    }
+    #main #main-info #main-info-skills{
+        padding:0;
+        margin: .5rem 1rem;
+    }
+    #main #main-info #main-info-about p{
+        font-size: 1em;
+        padding: 1rem;
+        margin: 0;
+    }
+    #main #main-info #main-info-links {
+        margin-top: 0;
+        font-weight: 300;
+        font-size: 1em;
+    }
+    
+}
+
+@media (max-width: 772px){
+    #main #main-intro{
+        margin: 4rem 1rem;
+    }
+
+    #main #main-info #main-info-about, #main #main-info #main-info-skills {
+        margin: 0 .5rem;
+        
+    }
+    #main #main-info #main-info-about p{
+        padding: 1rem 0.3rem;
+    }
+
+    #main #main-info #main-info-skills h2{
+        margin-top: 1rem;
+    }
+    #main #main-info #main-info-skills #main-info-skills-icons{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        padding: 0;
+    
+    }
+    #main #main-info #main-info-skills #main-info-skills-icons figure{
+        margin: 0 1.6rem;
+        padding: .2rem;
+
+    }
+    #main #main-info #main-info-skills #main-info-skills-icons figure i{
+        font-size: 2.3rem;
+    }
+
+    #main #main-info #main-info-links {
+        margin-top: 1rem;
+        font-weight: 300;
+        font-size: .8em;
+    }
+
+}
+
+@media(max-width: 640px){
+    #main{
+        height: auto;
+        flex-direction: column;
+
+    }
+    #main #main-intro, #main #main-info{
+            width: 100%;
+            min-height: 90vh;
+    }
+    #main #main-info #main-info-skills #main-info-skills-icons{
+        margin-top: 1.5rem;
+    }
+    #main #main-info #main-info-links{
+        margin-top: 4rem;
+    }
+}

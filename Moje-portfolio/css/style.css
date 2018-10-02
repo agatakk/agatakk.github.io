@@ -6,7 +6,6 @@ body{
    
     margin: 0;
     padding: 0;
-    
     font-family: 'Raleway', sans-serif;
 }
 
@@ -30,7 +29,7 @@ h3{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height:100vh;
+    height: 100vh;
     display: flex;
 }
 
@@ -55,18 +54,18 @@ h3{
 }
 
 #main #main-intro figure{
-    /* position: relative; */
     background-color: rgba(255, 255, 255, 0.7);
     display: flex;
     justify-content: center;
     height: 55vh;  
     margin: 2rem 0 0 0;
-    padding: 3rem 0rem;
+    padding: 2.4rem 0rem;
 }
 
-/* #main #main-intro figure img{
-    /* min-height: 40vh;
-   } */
+#main #main-intro figure img{
+    height: 90%;
+    
+   }
 
 #main #main-info{
     background-color: rgba(255, 255, 255, 0.7);
