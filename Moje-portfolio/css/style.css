@@ -7,12 +7,11 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    
 }
 
 h1, h2, h3, h4 {
     color: rgb(189, 27, 54);
-    margin: 0;
-    padding: 0;
     font-family:'PT Sans Narrow', sans-serif;
     }
 
@@ -29,12 +28,13 @@ h3{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+   
 }
 
 
-#main-intro{
+#main #main-intro{
     width: 50%;
     margin: 4rem 2rem;
     padding: 0 2rem;
@@ -43,9 +43,10 @@ h3{
 #main #main-intro #my-name{
     background-color: rgba(255, 255, 255, 0.7);
     text-align: center;
-    max-height: 20vh;
+    min-height: 18vh;
     padding: 0.5rem;
-    line-height: 1.3;
+    align-self: center;
+   
     }
 
 #main #main-intro #my-name h1{
@@ -57,7 +58,7 @@ h3{
     background-color: rgba(255, 255, 255, 0.7);
     display: flex;
     justify-content: center;
-    height: 55vh;  
+    min-height: 58vh;  
     margin: 2rem 0 0 0;
     padding: 2.4rem 0rem;
 }
@@ -71,11 +72,11 @@ h3{
     background-color: rgba(255, 255, 255, 0.7);
     display:flex;
     flex-direction: column;
-    height: 100%;
+   min-height: 100%;
     width: 50%;
-    padding: 2rem 2rem;
-    padding-bottom: 0;
-    /* padding-top: .5rem; */
+    padding: 1rem 2rem;
+  
+  
   
 }
 #main #main-info #main-info-about {
@@ -92,24 +93,7 @@ h3{
 
 }
 
-/* #main #main-info #main-info-about h2, #main-info-skills h2{
-    position: relative;
-    /* display: inline-block; */
-    /* height: 100%;
-} */
-/* #main #main-info #main-info-about h2::before,
-#main #main-info #main-info-skills h2::before{
-    content:'';
-    position: absolute;
-    display: block;
-    width: 15vw;
-    height: 1px;
-    background-color: rgb(189, 27, 54);
-    left: 0;
-    /* top: -.5rem;
-    transform: translateX(50%); 
-} */
-#main #main-info #main-info-about p{
+main-info #main-info-about p{
  
     font-size: 1.2em;
     font-weight: 600;
@@ -132,7 +116,7 @@ h3{
 #main-info #main-info-skills #main-info-skills-icons figure{
    
     margin: 0 1.5rem;
-    padding:0.3rem;
+    padding: 0.3rem;
     
 }
 
@@ -196,18 +180,18 @@ h3{
 
 #portfolio{
     background-color: #fff;
-    height: 100vh;
+    min-height: 100vh;
     padding: 1.5rem;
 }
 
 #portfolio .portfolio-h2{
     margin: 1.8rem;
-
-    
-
 }
+
 #portfolio figure {
-    width:90%;
+   position: relative;
+   left: 3rem;
+    width:80%;
     height: 300px;
     margin-top: 3rem;
    
@@ -219,6 +203,9 @@ h3{
     position: relative;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 1rem;
     border-radius: .5rem;
   -webkit-box-shadow: 0.5rem .5rem 0.5rem .1rem rgb(85, 85, 85, .7);  
   -moz-box-shadow:    0.5rem .5rem 0.5rem .1rem rgb(85, 85, 85, .7);  
@@ -234,6 +221,7 @@ h3{
     border-radius: .5rem;
   
 }
+
 
 #portfolio figure .item-mask{
     
