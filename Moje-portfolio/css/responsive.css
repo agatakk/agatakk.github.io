@@ -1,7 +1,28 @@
 @media (min-width: 992px) and (max-width: 1064px){
-    #main #main-info #main-info-links{
-        margin-top: -3.2rem;
+    #portfolio figure{
+        height: 26vw;
+        width: 80%;
     }
+    #portfolio figure .item-mask .item-mask-content{
+        padding: .8rem;
+    }
+
+    #portfolio figure .item-mask .item-mask-content h3{
+        font-size: 1.3em;
+        padding: .5rem;
+    }
+    #portfolio figure .item-mask .item-mask-content h3:hover{
+        transform: scale(1.05)
+    }
+    #portfolio figure .item-mask .item-mask-content p{
+        font-size: 1rem;
+        margin: .7rem 0;
+    }
+    #portfolio figure .item-mask .item-mask-content h4{
+        font-size: 1.1rem;
+        margin-top: .8rem;
+    }
+   
 }
 @media (max-width: 991px){
     h2{
@@ -27,35 +48,68 @@
         margin: 0;
     }
     #main #main-info #main-info-links {
-        margin-top: 0;
+   
         font-weight: 300;
         font-size: 1em;
     }
     #portfolio figure{
-        max-height: 28vw;
+        width:88%;
+        height: 22vw;
         left: 1.5rem;
     }
+    
     #portfolio figure .item-mask .item-mask-content{
-        padding: .5rem;
+        padding: .8rem;
     }
 
     #portfolio figure .item-mask .item-mask-content h3{
-        font-size: 1.3em;
-        padding: .4rem;
+        
+        font-size: 1.2em;
+        padding: .3rem;
+        margin:0;
     }
+   
+
     #portfolio figure .item-mask .item-mask-content p{
-        font-size: .9em;
-        margin: .6em 0;
+        font-size: .8em;
+        margin: .5em 0;
     }
     #portfolio figure .item-mask .item-mask-content h4{
-        font-size: 1.2em;
-        margin-top: 1.2em;
+        font-size: 1.2rem;
+        margin-top: .6rem;
     }
    
     
 }
 
-@media (max-width: 772px){
+@media(max-width: 870px){
+
+    #portfolio figure .item-mask-content{
+        padding: 0.3rem;
+    }
+  
+
+    #portfolio figure .item-mask .item-mask-content h3{
+        font-size: 1.1em;
+        padding: .3rem;
+        margin:0;
+    }
+    #portfolio figure .item-mask .item-mask-content h3:hover{
+        transform: scale(1.03)
+    }
+
+    #portfolio figure .item-mask .item-mask-content p{
+        font-size: .8rem;
+        margin: .3rem 0;
+    }
+    #portfolio figure .item-mask .item-mask-content h4{
+        font-size: 1.05rem;
+        margin-top: .4rem;
+    }
+
+}
+
+@media (max-width: 767px){
     #main #main-intro{
         margin: 4rem 1rem;
     }
@@ -88,7 +142,7 @@
     }
 
     #main #main-info #main-info-links {
-        margin-top: 1rem;
+      
         font-weight: 300;
         font-size: .8em;
     }
@@ -114,9 +168,7 @@
         font-size: 1.4em;
         padding: .3rem;
     }
-    #portfolio figure .item-mask .item-mask-content h3:hover{
-        transform: scale(1.05)
-    }
+   
     #portfolio figure .item-mask .item-mask-content p{
         margin: 1em 0;
         font-size: .8rem;
@@ -151,7 +203,7 @@
     #portfolio figure{
         margin-left:2rem;
         margin-right:1rem;
-        left: 1rem;
+        left:0;
         width: 80%;
         height: 40vw;
     }
@@ -183,12 +235,15 @@
 @media(max-width: 480px){
     #portfolio figure{
         width: 90%;
-        height: 50vh;
+        height: 45vh;
         margin-left: 1rem;
         left:0;
     }
-    #contact #contact-more-info .tel-email a p{
-        font-size: .5rem;
+    #contact .background-white{
+        padding: .5rem;
+    }
+    #contact .contact-more-info .tel-email .mail{
+        font-size: 1rem;
     }
 
 }
