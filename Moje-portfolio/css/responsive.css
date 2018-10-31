@@ -26,13 +26,19 @@
 }
 @media (max-width: 991px){
     h2{
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
     h3{
         font-size: 1.2em;
     }
+    #main #main-intro{
+        padding: 2rem;
+    }
+    #main #main-intro #my-name{
+        padding: 0.5rem 4rem;
+    }
     #main #main-intro #my-name h1{
-        font-size: 2em;
+        font-size: 1.8rem;
     }
     #main #main-info #main-info-about{
         padding: 0;
@@ -41,24 +47,25 @@
     #main #main-info #main-info-skills{
         padding:0;
         margin: .5rem 1rem;
+        justify-content: center;
+        
     }
+    #main #main-info #main-info-skills-icons{
+        flex-wrap: wrap;
+    }
+
     #main #main-info #main-info-about p{
         font-size: 1em;
         padding: 1rem;
         margin: 0;
     }
-    #main #main-info #main-info-links {
-   
-        font-weight: 300;
-        font-size: 1em;
-    }
+    
     #portfolio figure{
         width:88%;
-        height: 22vw;
-        left: 1.5rem;
+        
     }
     
-    #portfolio figure .item-mask .item-mask-content{
+    /* #portfolio figure .item-mask .item-mask-content{
         padding: .8rem;
     }
 
@@ -78,11 +85,19 @@
         font-size: 1.2rem;
         margin-top: .6rem;
     }
-   
+    */
     
 }
-
+/* 
 @media(max-width: 870px){
+ 
+    #main #main-intro, #main #main-info{
+      
+
+    }
+    #portfolio{
+        height: auto;
+    }
 
     #portfolio figure .item-mask-content{
         padding: 0.3rem;
@@ -107,11 +122,24 @@
         margin-top: .4rem;
     }
 
-}
+} */
 
 @media (max-width: 767px){
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
     #main #main-intro{
+        
         margin: 4rem 1rem;
+    }
+    #main #main-intro, #main #main-info{
+        width: 100%;
+    }
+
+    #main #main-info .translate-y{
+        transform: translate(-50%, 0);
+        
     }
 
     #main #main-info #main-info-about, #main #main-info #main-info-skills {
@@ -152,12 +180,12 @@
     }
    
     #portfolio figure{
-        width: 65%;
-        height: 32vw;
+        width: 80%;
+        height: 45vw;
         margin-right: 0;
-        left: 7rem;
+     
     }
-    #portfolio figure .portfolio-item{
+    /* #portfolio figure .portfolio-item{
         top:0;
         left:0;
     }
@@ -176,7 +204,7 @@
     #portfolio figure .item-mask .item-mask-content h4{
         margin-top: 1rem;
         font-size: 1.15em;
-    }
+    } */
 
 }
 
@@ -205,25 +233,25 @@
         margin-right:1rem;
         left:0;
         width: 80%;
-        height: 40vw;
+        height: 45vw;
     }
 
-    #portfolio figure .portfolio-item{
+    /* #portfolio figure .portfolio-item{
         margin: 0 .5rem;
     }
     
        #portfolio figure .item-mask .item-mask-content{
-        padding: .5rem;
-    }
+        padding: 1rem;
+    } */
     #portfolio figure .item-mask .item-mask-content h3{
-        font-size: 1.1em;
+        font-size: 1.3em;
         padding: .3rem;
     }
     #portfolio figure .item-mask .item-mask-content h3:hover{
         transform: scale(1.03)
     }
     #portfolio figure .item-mask .item-mask-content p{
-        margin-top: 2em 0;
+        margin-top: .2rem;
         font-size: .8rem;
     }
     #portfolio figure .item-mask .item-mask-content h4{
@@ -234,16 +262,55 @@
 
 @media(max-width: 480px){
     #portfolio figure{
-        width: 90%;
-        height: 45vh;
+        width: 100%;
+        
         margin-left: 1rem;
         left:0;
     }
-    #contact .background-white{
+    #portfolio figure .portfolio-item .item-mask .item-mask-content{
         padding: .5rem;
     }
+
+    #portfolio figure .portfolio-item .item-mask .item-mask-content .tech{
+        margin: .2rem;
+    }
+    #contact .pad-marg-0 .height-100{
+        /* margin: -5px; */
+        width: 100%;
+        margin-left: 0;
+    }
+    #contact .background-white{
+        padding: .5rem;
+        width: 100%;
+
+    }
+    #contact .pad-marg-0{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
     #contact .contact-more-info .tel-email .mail{
         font-size: 1rem;
     }
+    #contact .contact-form input[type="submit"]{
+        width: 25vw;
+    }
 
+}
+
+@media(max-width: 350px){
+    #portfolio figure{
+        width: 100%;
+       
+        margin-left: 0;
+    }
+    #portfolio figure .portfolio-item .item-mask .item-mask-content h4{
+        margin: .3rem auto;
+    }
+    #portfolio figure .portfolio-item .item-mask .item-mask-content p{
+        font-size: .7rem;
+        margin: .2rem auto;
+    }
 }

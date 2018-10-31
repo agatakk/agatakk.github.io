@@ -17,21 +17,28 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <!-- Nagłówek/Header -->
     <header id="main">
+        <!--Imię + Zdjęcie -->
         <section id="main-intro" class="animation">
                  <div id="my-name" class="animation">
+                     <div class="centered-content">
                      <h1>Agata Kubiak-Kokot</h1>
-                     <h3>(aspirujący) Front-end developer</h3>     
+                     <h3>(aspirujący) Front-end developer</h3>
+                    </div>     
                  </div>
                 <figure class="animation">
-                    <img src="img/Moje.jpg" alt="Moje zdjecie z Garym">
+                    <img src="img/Moje.jpg" alt="Moje zdjecie z Garym" class="centered-content">
                 </figure>
         </section>
-        <section id="main-info" class="animation animation-d">
+        <!-- Information about -->
+        <section id="main-info" class="animation">
+            <div class="centered-content translate-y">
             <section id="main-info-about">
                 <h2>O mnie</h2>
                 <p>Z wykształcenia sinolożka. Z zawodu tłumaczka i nauczycielka. Z zamiłowania blogerka.</p>
-                <p>Front-end developer z ciekawości.</p>
+                <p>Front-end developer z ciekawości. Wiedziona chęcią zmiany wyglądu swojego bloga zaczęłam zagłębiać się w tajniki HTML, CSS i JS. Blog od tego czasu pozostał niezmieniony, za to ja zaczęłam posługiwać się wyżej wspomnianymi językami w różnym stopniu zaawansowania.</p>
+                <p>Jestem osobą otwartą na nowe wyzwania, uwielbiam uczyć się nowych rzeczy. Dociekam, szukam rozwiązań.</p>
             </section>
             <section id="main-info-skills">
                 <h2>Moje umiejętności</h2>
@@ -48,18 +55,22 @@
                 <figure><i class="fab fa-git"></i>
                     <figcaption>GIT</figcaption>
                 </div>
+            </div>
             </section>
-            <section id="main-info-links">
+            <!-- <section id="main-info-links">
                     <p><a href="#portfolio">PORTFOLIO</a></p>
                     <p><a href="#contact">KONTAKT</a></p>
-         </section>
+         </section> -->
         </section>
     </header>
+    <!-- Portfolio -->
     <section class="container-fluid text-center" id="portfolio">
+        <!-- Nagłówek sekcji portfolio -->
             <div class="portfolio-h2 row">
                 <h2>PORTFOLIO</h2>
             </div>
-            <div class="row">
+               <div class="row">
+                    <!-- Pozycja portfolio - pierwsza -->
                 <div class="col-md-6">
                         <figure>
                             <div class="portfolio-item"><img src="img/wings-int.png" alt="Strona wingsinternational.pl screenshot">
@@ -77,6 +88,7 @@
                             </div>
                             </figure>
                 </div>
+                    <!-- Pozycja portfolio - druga -->
                 <div class="col-md-6">
                         <figure>
                                 <div class="portfolio-item"><img src="img/wings-int.png" alt="Strona wingsinternational.pl screenshot">
@@ -88,7 +100,7 @@
                                             </a>
                                             <p>Landing page chińskiego startupu, zajmującego się importem produktów aluminiowych. Projekt oraz kod mojego autorstwa.</p>
                                             <h4>Wykorzystane technologie:</h4>
-                                            <p>HTML5, CSS</p>
+                                            <p class="tech">HTML5, CSS</p>
                                         </div>
                                     </div>
                                 </div>
@@ -97,14 +109,15 @@
             </div>
            
            
-        </section>
-
-        <footer id="contact">
-            <div class="container-fluid">
-             <div class="row">
+    </section>
+    <!-- Footer -->
+    <footer id="contact">
+            <div class="container-fluid pad-marg-0">
+             <div class="row height-100">
+                 <!-- Części biała -->
                 <div class="col-md-6 col-sm-12 background-white">
-                    <section class="row contact-more-info">
-                     <div class="col-md-12">
+                    <section class="row ">
+                     <div class="col-md-12 contact-more-info">
                         <h2>Chcesz wiedzieć więcej?</h2> 
                         <h3>Zajrzyj tutaj</h3>
                         <div class="social-icons">
@@ -133,12 +146,10 @@
                         </div>
                     </div>
                     </section>
-                    <section class="row contact-more-info background-green">
-                        <div class="col-md-12">
-                            <div class="row">
-                        <h3>Skontaktuj się ze mną</h3>
-                    </div>
-                    <div class="row">
+                    <section class="row contact-more-info">
+                     
+                            <h3>Skontaktuj się ze mną</h3>
+                        
                         <div class="col-md-12">
                         <div class="tel-email">
                             <figure>
@@ -152,28 +163,28 @@
                             </figure>
                             <a href="mailto:kubiak.aga@gmail.com"><p class="contact-details mail">kubiak.aga@gmail.com</p></a>
                         </div>
-                        </div>
-                    </div>
-                    </div>
+                       
+                     </div>
                     </section>
                 </div>
-        <div class="col-md-6 col-sm-12 contact-more-info contact-form">
-            <div class="row">
-                <h3>Napisz do mnie</h3>
-            </div>
-            <div class="row contanct-me">
-            <form action="https://formspree.io/kubiak.aga@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Wpisz swoje imię">
-                <input type="email" name="_replyto" placeholder="Wpisz swój e-mail">
-                <textarea name="_message" id="" cols="30" rows="10" placeholder="Twoja wiadomość"></textarea>
-                <input type="submit" value="Wyślij">
-                <input type="hidden" name="_next" value="https://agatakk.github.io/Moje-portfolio/">
-            </form>
-            </div>
-        </div>
+                <!-- Część szara - formularz -->
+                <div class="col-md-6 col-sm-12 contact-more-info contact-form">
+                    <div class="row">
+                        <h4>Napisz do mnie</h4>
+                    </div>
+                    <div class="row contact-me">
+                    <form action="https://formspree.io/kubiak.aga@gmail.com" method="POST">
+                        <input type="text" name="name" placeholder="Wpisz swoje imię">
+                        <input type="email" name="_replyto" placeholder="Wpisz swój e-mail">
+                        <textarea name="_message" id="" cols="30" rows="10" placeholder="Twoja wiadomość"></textarea>
+                        <input type="submit" value="Wyślij">
+                        <input type="hidden" name="_next" value="https://agatakk.github.io/Moje-portfolio/">
+                    </form>
+                    </div>
+                </div>
     </div>
 </div>
-        </footer>
+    </footer>
 
     
     <script src="js/main.js"></script>
