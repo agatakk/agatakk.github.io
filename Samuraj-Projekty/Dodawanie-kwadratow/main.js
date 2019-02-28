@@ -7,7 +7,7 @@ const showNumber = () => {
     const div = document.createElement('div');
     wrapper.appendChild(div);
 
-    
+    div.textContent = "1";
 
 }
 
