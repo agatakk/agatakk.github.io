@@ -32,7 +32,6 @@ div{
     height: 80vh;
     width: 100%;
     background-color: white;
-    padding: 15px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
