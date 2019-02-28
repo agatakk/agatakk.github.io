@@ -5,6 +5,14 @@
 body{
     font-family: 'Courier New', Courier, monospace;
 }
+div{
+
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background-color: rgb(194, 89, 120);
+    color:rgb(214, 214, 214);
+}
 .wrapper{
     padding: 5vh;
     height: 100vh;
@@ -12,12 +20,23 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+}
 
+.inner_wrapper{
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 button{
-    height: 3vw;
-    width: 10vw;
+    height: 40px;
+    width: 130px;
     margin: 5px;
     color: rgb(194, 89, 120);
     background-color: rgb(214, 214, 214);
@@ -26,7 +45,7 @@ button{
     font-weight: 600;
     font-size: 1rem;
     border-radius: 4%;
-    transition: all .5s linear;
+    transition: all .3s linear;
 }
 
 button:hover{
@@ -34,14 +53,6 @@ button:hover{
     color:  rgb(214, 214, 214);
 }
 
-.clicked{
-
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    background-color: rgb(194, 89, 120);
-    color:rgb(214, 214, 214);
-}
 
 .clicked-fifth{
     background-color: rgb(214, 214, 214);
