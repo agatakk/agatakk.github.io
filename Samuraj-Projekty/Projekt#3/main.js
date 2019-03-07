@@ -8,15 +8,22 @@ console.log(listItems);
 
 let size = 15;
 
+// const addListElements = () =>{
+    
+//     for(let i = 0; i < listItems.length; i++){
+//        listItems[i].classList.remove("li_display");       
+//     }
+
+//        ul.style.fontSize = ++size + "px";
+// }
+
 const addListElements = () =>{
     
-    for(let i = 0; i < listItems.length; i++){
-       listItems[i].classList.remove("li_display");
-       listItems[i].style.fontSize = size +"px" ;
-       
-    }
-
-   
+    listItems.forEach(function(item){
+       item.classList.remove("li_display");       
+    })
+    
+       ul.style.fontSize = ++size + "px";
 }
 
 btn.addEventListener("click", addListElements);
