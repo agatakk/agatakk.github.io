@@ -5,15 +5,15 @@ let size = 100;
 div.style.height = size + "px";
 div.style.width = size + "px";
 
-let grow = true;
+let grow = false;
 
 const enlargeDiv = () => {
-    if(size>window.innerHeight / 2){
-        grow = !grow
-    }else if(size<=0){
-        grow = !grow
-    }
-    if(grow){
+    // if(size<=0){
+    // grow = !grow
+    // }else if(size>window.innerHeight / 2){
+    //     grow = !grow
+    // }
+    if(size<=window.innerHeight/2){
         size += 6;
         div.style.height = size + "px";
         div.style.width = size + "px";
@@ -23,5 +23,6 @@ const enlargeDiv = () => {
         div.style.width = size + "px";
     }
 }
+
 
 window.addEventListener("scroll", enlargeDiv);

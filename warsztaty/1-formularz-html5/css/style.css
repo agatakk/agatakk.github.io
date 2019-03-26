@@ -28,7 +28,6 @@ textarea {
     display: block;
     background-color: #2b4a64;
     border: none;
-   
     margin-top: 5px;
     padding: 5px;
 }
@@ -56,5 +55,5 @@ input:focus, select:focus, textarea:focus {
     
     border: 1px solid #ffffff;
     background-color: #2b4a64; 
-    outline: none;
+    border: none;
 }

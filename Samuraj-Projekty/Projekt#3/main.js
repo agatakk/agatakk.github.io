@@ -20,10 +20,12 @@ let size = 15;
 const addListElements = () =>{
     
     listItems.forEach(function(item){
-       item.classList.remove("li_display");       
+        item.classList.remove("li_display");  //można też: item.style.display = "block" bez nadawania odrębnej klasy na elementy listy; 
+        item.style.fontSize = size +"px";    
     })
+    size++
     
-       ul.style.fontSize = ++size + "px";
+    //    ul.style.fontSize = ++size + "px";
 }
 
 btn.addEventListener("click", addListElements);
