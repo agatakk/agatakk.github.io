@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+}
+
+.main-header{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
